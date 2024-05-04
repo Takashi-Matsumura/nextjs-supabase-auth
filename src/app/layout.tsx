@@ -16,7 +16,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex flex-col min-h-screen">
+          <main className="flex-1 container mx-auto px-1 py-5">{children}</main>
+        </div>
+
+        <footer className="py-4">
+          <div className="text-center">
+            (c) {new Date().getFullYear()} MatsBACCANO
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }
