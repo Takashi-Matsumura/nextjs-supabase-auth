@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/layout/Footer";
+import Header from "./components/layout/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,17 +17,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen">
+        <Header style={{ position: "fixed", top: 0, width: "100%" }} />
+        <div
+          style={{ paddingTop: "60px", paddingBottom: "60px" }}
+          className="flex flex-col min-h-screen "
+        >
           <main className="flex-1 container mx-auto px-1 py-5">{children}</main>
         </div>
-
-        <footer className="py-4">
-          <div className="text-center">
-            (c) {new Date().getFullYear()} MatsBACCANO
-          </div>
-        </footer>
+        <Footer style={{ position: "fixed", bottom: 0, width: "100%" }} />
       </body>
     </html>
   );

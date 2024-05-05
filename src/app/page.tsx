@@ -11,6 +11,7 @@ export default async function Home() {
 
   return (
     <div className="text-center text-xl">
+      <h1>Home</h1>
       {data ? <div>ログイン済</div> : <div>未ログイン</div>}
     </div>
   );
