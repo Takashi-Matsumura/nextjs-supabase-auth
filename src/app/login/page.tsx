@@ -1,4 +1,4 @@
-import LogoutButton from "./LogoutButton";
+import LogoutButton from "../settings/profile/components/logout/LogoutButton";
 import { login, signup } from "./actions";
 
 export default function LoginPage() {
@@ -16,7 +16,6 @@ export default function LoginPage() {
         <button formAction={login}>Log in</button>
         <button formAction={signup}>Sign up</button>
       </div>
-      <LogoutButton />
     </form>
   );
 }

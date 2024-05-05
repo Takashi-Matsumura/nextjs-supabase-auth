@@ -1,6 +1,6 @@
 "use client";
 
-import { logout } from "./actions";
+import { logout } from "@/app/settings/profile/actions";
 
 const LogoutButton = () => {
   const handleLogout = () => {
