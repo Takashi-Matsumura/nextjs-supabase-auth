@@ -1,5 +1,6 @@
 "use server";
 
+import Image from "next/image";
 import { createClient } from "@/utils/supabase/server";
 import Link from "next/link";
 
@@ -24,7 +25,18 @@ const Header: React.FC<HeaderProps> = async ({ style }) => {
 
         <div>
           {data.user ? (
-            <Link href="/logout">Logout</Link>
+            <div className="flex items-center space-x-5">
+              <Link href="/settings/profile">
+                <div className="relative w-10 h-10">
+                  <Image
+                    src="/default.png"
+                    className="rounded-full object-cover"
+                    alt="avatar"
+                    fill
+                  />
+                </div>
+              </Link>
+            </div>
           ) : (
             <div className="space-x-5">
               <Link href="/login">Login</Link>
