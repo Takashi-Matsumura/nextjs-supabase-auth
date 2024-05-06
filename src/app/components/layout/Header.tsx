@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = async ({ style }) => {
     >
       <div className="container max-w-screen mx-auto flex items-center justify-between">
         <Link href="/" className="font-bold text-xl">
-          Welcome {data.user ? data.user.email : "Guest"}
+          Welcome　({data.user ? data.user.email : "Guest"})
         </Link>
 
         <div>
