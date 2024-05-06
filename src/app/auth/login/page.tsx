@@ -13,7 +13,7 @@ export default function LoginPage() {
             type="email"
             placeholder="メールアドレス"
             required
-            className="border w-full py-2 pl-2"
+            className="border w-full py-2 pl-2 focus:outline-none focus:border-sky-500"
           />
           <input
             id="password"
@@ -21,7 +21,7 @@ export default function LoginPage() {
             type="password"
             placeholder="パスワード"
             required
-            className="border w-full py-2 pl-2 mt-5"
+            className="border w-full py-2 pl-2 mt-5 focus:outline-none focus:border-sky-500"
           />
           <button
             formAction={login}

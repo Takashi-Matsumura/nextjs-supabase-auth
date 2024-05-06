@@ -22,7 +22,7 @@ const EmailPage = async () => {
             type="email"
             placeholder="新しいメールアドレス"
             required
-            className="border w-full py-2 pl-2"
+            className="border w-full py-2 pl-2 focus:outline-none focus:border-sky-500"
           />
         </div>
         <button className="w-full bg-black text-white rounded-full py-2 mt-5">

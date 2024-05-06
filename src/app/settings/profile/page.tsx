@@ -31,15 +31,14 @@ const ProfilePage = async () => {
           type="text"
           placeholder="名前"
           required
-          className="border w-full py-2 pl-2 mt-3"
+          className="border w-full py-2 pl-2 mt-3 focus:outline-none focus:border-sky-500"
         />
-        <input
+        <textarea
           id="introduce"
           name="introduce"
-          type="text"
           placeholder="自己紹介"
-          required
-          className="border w-full py-2 pl-2 mt-3"
+          rows={5}
+          className="border w-full py-2 pl-2 mt-3 focus:outline-none focus:border-sky-500"
         />
         <button className="w-full bg-black text-white rounded-full py-2 mt-5">
           変更

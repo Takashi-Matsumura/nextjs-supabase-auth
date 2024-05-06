@@ -4,7 +4,7 @@ import {
   UserCircleIcon,
   EnvelopeIcon,
   KeyIcon,
-  ArrowLeftEndOnRectangleIcon,
+  ArrowRightStartOnRectangleIcon,
 } from "@heroicons/react/24/outline";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -28,7 +28,7 @@ const subNavigation = [
   },
   {
     name: "ログアウト",
-    icon: ArrowLeftEndOnRectangleIcon,
+    icon: ArrowRightStartOnRectangleIcon,
     href: "/settings/logout",
   },
 ];

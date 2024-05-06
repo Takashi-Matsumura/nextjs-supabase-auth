@@ -11,7 +11,7 @@ const PasswordPage = () => {
             type="password"
             placeholder="新しいパスワード"
             required
-            className="border w-full py-2 pl-2"
+            className="border w-full py-2 pl-2 focus:outline-none focus:border-sky-500"
           />
         </div>
         <div className="mt-5">
@@ -22,7 +22,7 @@ const PasswordPage = () => {
             type="password"
             placeholder="確認用パスワード"
             required
-            className="border w-full py-2 pl-2"
+            className="border w-full py-2 pl-2 focus:outline-none focus:border-sky-500"
           />
         </div>
         <button className="w-full bg-black text-white rounded-full py-2 mt-5">
