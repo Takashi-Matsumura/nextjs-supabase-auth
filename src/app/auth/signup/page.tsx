@@ -1,7 +1,6 @@
-import LogoutButton from "../settings/profile/components/logout/LogoutButton";
-import { login, signup } from "./actions";
+import { login, signup } from "@/app/auth/actions";
 
-export default function LoginPage() {
+export default function SignupPage() {
   return (
     <form className="space-y-5">
       <div>
@@ -13,7 +12,6 @@ export default function LoginPage() {
         <input id="password" name="password" type="password" required />
       </div>
       <div className="flex justify-between w-1/3">
-        <button formAction={login}>Log in</button>
         <button formAction={signup}>Sign up</button>
       </div>
     </form>

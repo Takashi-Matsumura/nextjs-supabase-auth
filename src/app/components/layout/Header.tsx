@@ -39,8 +39,8 @@ const Header: React.FC<HeaderProps> = async ({ style }) => {
             </div>
           ) : (
             <div className="space-x-5">
-              <Link href="/login">Login</Link>
-              <Link href="/signup">Signup</Link>
+              <Link href="/auth/login">Login</Link>
+              <Link href="/auth/signup">Signup</Link>
             </div>
           )}
         </div>

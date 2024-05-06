@@ -1,6 +1,6 @@
-import LogoutButton from "@/app/settings/profile/components/logout/LogoutButton";
+import LogoutButton from "@/app/auth/components/LogoutButton";
 
-const Page = () => {
+const ProfilePage = () => {
   return (
     <div>
       <p>ログアウトしますか？</p>
@@ -9,4 +9,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default ProfilePage;
